@@ -1,0 +1,30 @@
+<ng-container *ngIf="router.url != '/authorized'">
+    <nav class="nav-principal">
+        <ul>
+            <li (click)="goto('/dashboard');"
+                [ngClass]="{'active': router.url == '/dashboard' || router.url == '' || router.url == '/' }"
+                >
+                <a href="#" (click)="$event.preventDefault();" title="Accéder à l'accueil">
+                    <i class="icon-accueil"></i>
+                    <span>Accueil</span>
+                </a>
+            </li>
+            <li (click)="goto('/search');" [ngClass]="{'active': router.url == '/search'}" >
+                <a href="#" (click)="$event.preventDefault();" title="Accéder à la recherche de bâtiments">
+                    <i class=" icon-recherche"></i>
+                    <span>Recherche</span>
+                </a>
+            </li>
+
+        </ul>
+        <ul>
+            <li (click)="goto('/profil')" [ngClass]="{'active': router.url == '/profil'}" >
+                <a href="#" (click)="$event.preventDefault();" title="Accéder à votre profil">
+                    <i class="icon-profil"></i>
+                    <span>Mon profil</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</ng-container>

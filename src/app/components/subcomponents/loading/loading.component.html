@@ -1,0 +1,7 @@
+<div id="loading" [ngClass]="{ 'l-hidden': messages.length <= 0, 'l-displayed': messages.length > 0 }">
+    <div class="bar"></div>
+    <div class="message" *ngFor="let message of messages; let last = last">
+        <span>{{ message }}</span>
+        <span class="separator" *ngIf="!last">|</span>
+    </div>
+</div>

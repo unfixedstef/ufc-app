@@ -1,0 +1,55 @@
+@import '../../../colors';
+
+$loadingHeight: 50px;
+
+#loading{
+    position:fixed;
+    bottom:0;
+    left: 80px;//offset pour la navbar
+    right: 0;
+    height: $loadingHeight;
+    width: calc(100% - 80px);
+    background-color: $active-bg-color;
+    z-index: 9999999; //obligé de mettre un nombre énorme pour compenser les autres
+    text-align: center;
+    transition:0.3s;
+    &.l-displayed{
+        bottom:0;
+    }
+    &.l-hidden{
+        bottom:-$loadingHeight;
+    }
+    .bar{
+        position:absolute;
+        top:0;
+        height: 5px;
+        animation: progressLoading 3s linear infinite;
+        background: #fff;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .message{
+        color:white;
+        display: inline-block;
+        line-height: $loadingHeight;
+        .separator{
+            display: inline-block;
+            margin: 0 5px;
+        }
+    }
+}
+
+@keyframes progressLoading {
+    0% {
+        left:0;
+        width: 0;
+    }
+    50%{
+        width:20%;
+    }
+    100%{
+        left:100%;
+        width:0;
+    }
+
+}
