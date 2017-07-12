@@ -1,0 +1,257 @@
+@import '../../../colors';
+
+.page-dashboard {
+    padding-top: 80px;
+    .row {
+        margin: 0px ;
+    }
+    .row-hello  {
+        padding-top: 40px;
+
+        .img-hello {
+            width: 100%;
+            max-height: 235px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        > div {
+            width: 97% !important;
+            margin: auto;
+            margin-bottom: 20px;
+            strong {
+                font-size: 18px;
+                padding-bottom: 20px;
+                display: inline-block;
+
+            }
+            p {
+
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    .template-fil-info, .template-guide {
+
+        .panel-heading {
+            p {
+
+            }
+        }
+        .panel-body {
+            padding: 21px 38px 30px 38px;
+            position: relative;
+
+            .text-guide {
+                margin: 20px 0;
+            }
+
+            ul {
+                width: 100%;
+                padding-bottom: 25px;
+
+                li {
+                    border-bottom: 1px solid $border-color;
+
+                    div.legend{
+                        padding-left:50px;
+                        float:right;
+                        margin: 20px 0 15px 0;
+                        span.dot:first-child{
+                            background-color: $news-new;
+                        }
+                    }
+                    span.dot {
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 50%;
+                        display: inline-block;
+                        margin-right: 10px;
+                        margin-top: 3px;
+                        &.new {
+                            background-color: $news-new;
+                            animation: blink-smooth 1s linear 0s infinite alternate;
+                        }
+                    }
+                    a {
+                        display: block;
+                        height: 48px;
+                        padding-top: 14px;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                        span {
+                            display: inline-block;
+                            &.new {
+                                color: $news-new !important;
+                            }
+                        }
+                        .info-date {
+                            float: right;
+                            color: $color;
+                        }
+                    }
+                }
+                li:last-child{
+                    border-bottom: none;
+                }
+
+            }
+        }
+
+        @keyframes blink-smooth {
+            to { background-color: transparent; }
+        }
+
+        button.btn-lg {
+            float:right;
+            background: $active-bg-color;
+            font-size: 13px;
+            color: white;
+        }
+    }
+    .wrap-indicateurs {
+        width: 97% !important;
+        margin: auto;
+        margin-bottom:20px;
+        .wrap-body {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            .panel {
+                width: 49%;
+                margin: 0;
+                vertical-align: top;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+
+                &:nth-child(odd) {
+                    margin-right:1%;
+                }
+                .panel-body {
+                    display: flex;
+                    flex-direction: column;
+                    .img-indicateur {
+                        margin-bottom: 20px;
+                    }
+                    .submit {
+                        margin-top: auto;
+                    }
+                }
+
+
+
+            }
+            .indicateur_picture{
+                max-width: 100%;
+                max-height: 100px;
+            }
+        }
+    }
+}
+
+.table-sortable > thead > tr > th {
+    cursor: pointer;
+    position: relative;
+    background-image: none;
+    vertical-align: top;
+    padding-right:10px;
+    min-width: 110px;
+}
+
+.table-sortable > thead > tr > th:after,
+.table-sortable > thead > tr > th.sort-false:after,
+.table-sortable > thead > tr > th.sort-true:after {
+    font-family: FontAwesome;
+    padding-left: 5px;
+    position: absolute;
+    top:6px;
+}
+
+.template-documentation {
+    .table-sortable > thead > tr > th:after {
+        content: "\f0dc";
+        color: #ddd;
+    }
+    .table-sortable > thead > tr > th.sort-false:after {
+        content: "\f0de";
+        color: #767676;
+    }
+    .table-sortable > thead > tr > th.sort-true:after {
+        content: "\f0dd";
+        color: #767676;
+    }
+    .table-sortable > tbody > tr > td > a {
+        cursor: pointer;
+    }
+}
+
+.btn-download {
+    margin-right:15px;
+}
+.modal-profil {
+    padding: 28px 38px 20px 38px;
+    .heading-list-pages {
+        font-weight: bold;
+        height: 48px;
+        text-align: center;
+    }
+
+    ul {
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            border-bottom: 1px solid $border-color;
+            height: 48px;
+            padding-top: 10px;
+
+
+            span {
+
+                text-align: center;
+            }
+
+            span:first-child {
+                display: inline-block;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.lien-autorisation {
+    width: 100%;
+    .autorisation-icon {
+        float: right;
+    }
+}
+@media screen and (max-width:1200px){
+    .page-dashboard {
+        .template-infos-perso {
+            .panel-body {
+                .col-infos {
+
+                    width: calc(92% - 176px);
+                    ul {
+                        width: 59%;
+                    }
+                    ul:last-child {
+                        width: 39%;
+                    }
+                }
+            }
+
+        }
+    }
+}

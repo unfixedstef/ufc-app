@@ -1,0 +1,18 @@
+@import '../../../colors';
+
+.wrap-contenu {
+    position: static;
+}
+.maintenance{
+    z-index: 999999999;
+    background-color: white;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0px;
+    left: -80px;
+    padding: 40vh 20vw 0 20vw;
+    text-align: center;
+
+
+}

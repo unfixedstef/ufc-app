@@ -1,0 +1,177 @@
+@import '../../../colors';
+
+.page-profil {
+    padding-top: 15px;
+
+    .template-infos-perso {
+        .panel-body {
+            padding: 28px 38px 20px 38px;
+            position: relative;
+            .col-photo {
+                width: 140px;
+                height: 140px;
+                display: inline-block;
+                vertical-align: top;
+                background-color: $nav-bg-color;
+                margin-right: 30px;
+                overflow: hidden;
+                position: absolute;
+                img {
+                    width: 100%;
+                    height: auto;
+                    color: white;
+                }
+            }
+            .col-infos {
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 176px;
+                width: calc(92% - 176px);
+                .profil-nom, .profil-fonction {
+                    font-size: 16px;
+                    display: block;
+                }
+                .profil-nom {
+                    font-weight: bold;
+                    min-height: 0px;
+                }
+                ul {
+                    display: inline-block;
+                    padding: 0;
+                    margin: 0;
+                    width: 49%;
+                    vertical-align: top;
+                    li {
+                        span {
+                            width: 59%;
+                            display: inline-block;
+                            vertical-align: top;
+
+                        }
+                        .profil-label {
+                            width: 39%;
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                ul:first-child {
+                    width: 100%;
+                    li {
+                        min-height: 0;
+                    }
+                    margin-bottom: 10px;
+                }
+                
+                ul:last-child {
+                    width: 39%;
+                }
+            }
+        }
+    }
+    .template-profil-fonction {
+        .panel-body {
+            padding: 28px 38px 20px 38px;
+            position: relative;
+            
+            .heading-list-pages {
+                font-weight: bold;
+                height: 48px;
+                text-align: center;
+            }
+            
+            ul {
+                width: 100%;
+                
+                li {
+                    border-bottom: 1px solid $border-color;
+                    height: 48px;
+                    padding-top: 10px;
+                    
+                    a {
+                        display: inline-block;
+                        color:$active-bg-color;
+                        font-weight: bold;
+                        height: 100%;
+                    }
+                    span {
+             
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+#profilAuthorizationsInfo{
+
+    margin-top: 30vh;
+}
+
+#profilAuthorizationsInfo, #profilAuthorizations {
+
+    .h3, .h4 {
+        font-size: 1.4rem;
+        margin:6px 0;
+    }
+}
+.modal-profil {
+        padding: 28px 38px 20px 38px;
+        .heading-list-pages {
+                font-weight: bold;
+                height: 48px;
+                text-align: center;
+            }
+        .h3, .h4 {
+            font-size: 1.4rem;
+        }
+        ul {
+                width: 100%;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+                
+                li {
+                    border-bottom: 1px solid $border-color;
+                    height: 48px;
+                    padding-top: 10px;
+                    
+                    
+                    span {
+             
+                        text-align: center;
+                    }
+                    
+                    span:first-child {
+                        display: inline-block;
+                        font-weight: bold;
+                        text-align: left
+                    }
+                }
+        }
+    }
+.lien-autorisation {
+    width: 100%;
+    .autorisation-icon {
+        float: right;
+    }
+}
+@media screen and (max-width:1200px){
+    .page-profil {   
+        .template-infos-perso {
+            .panel-body {
+                .col-infos {
+
+                    width: calc(92% - 176px);
+                    ul {
+                        width: 59%;
+                    }
+                    ul:last-child {
+                        width: 39%;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Carnet de santé du bâtiment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
+    <script type="text/javascript">
+        var isCordova = document.URL.indexOf('http://') === -1 && document.URL.indexOf('https://') === -1;
+        document.write('<base href="' + (isCordova ? './' : '/') + '" />');
+    </script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script type="text/javascript">
+        /** Permet de palier au bug du chargement de la map en file:// sur tablette **/
+        (function() {
+            var proxied = window.XMLHttpRequest.prototype.open;
+            window.XMLHttpRequest.prototype.open = function(method, url, async, user, pass) {
+                if(url.match(/file:\/\/[^+]*arcgis.com\//)){
+                    arguments[1] = url.replace('file://', 'https://');
+                }
+                return proxied.apply(this, [].slice.call(arguments));
+            };
+        })();
+    </script>
+
+    <script type="text/javascript" src="assets/data/GALocalStorage.js"></script>
+
+</head>
+<body>
+<div class="spinning-preloader-container">
+    <div class="spinning-preloader-elements"></div>
+</div>
+<app-root></app-root>
+</body>
+</html>

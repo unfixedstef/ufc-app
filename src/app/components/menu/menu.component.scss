@@ -1,0 +1,224 @@
+@import '../../colors';
+
+nav.nav-principal {
+
+    ul:first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        li {
+
+            border-bottom: 1px solid #a0a0a0;
+        }
+    }
+
+    ul:last-child {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        li {
+
+            border-top: 1px solid #a0a0a0;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+
+        li.hidden {
+            display: none;
+        }
+
+        li:hover {
+            cursor: pointer;
+            background-color: $nav-hover-bg-color;
+            a {
+                text-decoration: none;
+            }
+        }
+
+        li.active {
+            background-color: $active-bg-color;
+            border-bottom: 6px solid white;
+            a {
+                text-decoration: none;
+                i {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        li {
+            text-align: center;
+            color: $nav-color;
+            text-decoration: none;
+            font-size: small;
+            height: 80px;
+            padding: 0;
+
+            a {
+                color: white;
+                padding: 18px 6px 12px 6px;
+                display: block;
+
+            }
+
+            i {
+                display: block;
+                font-size: 2.8rem;
+            }
+            .icon-accueil {
+                &:before {
+                    content: $icon-accueil;
+                }
+            }
+            .icon-favoris {
+                &:before {
+                    content: $icon-favoris;
+                }
+            }
+            .icon-profil {
+                &:before {
+                    content: $icon-profil;
+                }
+            }
+            .icon-recherche {
+                &:before {
+                    content: $icon-recherche;
+                }
+            }
+            .icon-tournees {
+                &:before {
+                    content: $icon-tournees;
+                }
+            }
+            .icon-help {
+                &:before {
+                    content: $icon-help;
+                }
+            }
+
+            .icon-log-out {
+                &:before {
+                    content: $icon-log-out;
+                }
+            }
+
+            .icon-online {
+                &:before {
+                    content: $icon-en-ligne;
+                }
+            }
+            .icon-offline {
+                &:before {
+                    content: $icon-local;
+                }
+            }
+            .icon-synchro {
+                &:before {
+                    content: $icon-synchronisation;
+                }
+            }
+
+            span {
+                display: block;
+                margin-top: 4px;
+            }
+
+            &:last-child {
+
+                span {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-height: 640px) {
+
+    leftmenu {
+
+        padding: 0;
+        margin: 0;
+    }
+    nav.nav-principal {
+        ul {
+            position: static !important;
+
+            li {
+
+
+                i {
+
+                    font-size: 2rem;
+                }
+            }
+
+        }
+        ul:first-child {
+            height: auto;
+            li {
+                height: 70px;
+            }
+        }
+
+        ul:last-child {
+            height: auto;
+            li {
+                height: 70px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-height: 560px) {
+
+    leftmenu {
+
+        padding: 0;
+        margin: 0;
+    }
+    nav.nav-principal {
+        ul {
+            position: static !important;
+
+            li {
+
+                i {
+
+                    font-size: 2rem;
+                }
+                a {
+                    padding: 10px 6px 9px 6px;
+
+                }
+            }
+
+        }
+        ul:first-child {
+            height: auto;
+            li {
+                height: 66px;
+            }
+        }
+
+        ul:last-child {
+            height: auto;
+            li {
+                height: 66px;
+            }
+        }
+    }
+
+}
+
+.no-padding-left-right{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}

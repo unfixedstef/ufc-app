@@ -1,0 +1,18 @@
+<div class="container-fluid" [hidden]="isHidden">
+    <div class="wrap-menu">
+        <leftmenu></leftmenu>
+    </div>
+    <div class="wrap-contenu ">
+
+        <common-header class="bar-nav navbar-fixed-top"></common-header>
+
+        <p-growl [value]="notificationMessages"></p-growl>
+        <p-growl [value]="notificationMessagesPersisted" sticky="true"></p-growl>
+        <!-- Routed views go here -->
+        <main>
+            <router-outlet></router-outlet>
+        </main>
+    </div>
+    <app-loading></app-loading>
+</div>
+

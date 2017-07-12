@@ -1,0 +1,58 @@
+@import 'colors';
+
+div.container-fluid {
+
+    padding: 0;
+    .wrap-menu {
+        padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 80px;
+    background-color: $nav-bg-color;
+    position: fixed;
+    z-index: 999999;
+    }
+    .wrap-contenu {
+        width: calc(100% - 80px);
+            -moz-width:  calc(100% - 80px);
+            -webkit-width:  calc(100% - 80px);
+        position: absolute;
+        right: 0;
+
+        common-header{
+            width:  calc(100% - 80px);
+            -moz-width:  calc(100% - 80px);
+            -webkit-width:  calc(100% - 80px);
+            left:auto;
+        }
+    }
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1 {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+
+    menu {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            position: relative;
+    }
+}
+
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11 {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width:  calc(91.66666667% - 25px);
+            -moz-width:  calc(91.66666667% - 25px);
+            -webkit-width:  calc(91.66666667% - 25px);
+
+    common-header{
+            width:  calc(100% - 80px);
+            -moz-width:  calc(100% - 80px);
+            -webkit-width:  calc(100% - 80px);
+            left:auto;
+    }
+}

@@ -1,0 +1,106 @@
+/* -- General -- */
+$color: #4f4f4f;
+$color-darken: #323232;
+$bg-color: white;
+$border-color: #dedede;
+$gris-clair: #f0f0f0;
+$error: #9c0000;
+$warning:#FFB300;
+
+/* -- Active -- */
+$active-color: $bg-color;
+$active-bg-color: #007bbd;
+$active-border-color: #007bbd;
+
+/* -- Menu navigation -- */
+$nav-color: $bg-color;
+$nav-bg-color: $color;
+$nav-hover-color: $bg-color;
+$nav-hover-bg-color: $color-darken;
+$nav-border-color: $border-color;
+
+/* -- Menu actions -- */
+$menu-color: $color;
+$menu-bg-color: $bg-color;
+$menu-border-color: $border-color;
+$menu-hover-color: $active-bg-color;
+$menu-hover-bg-color: $bg-color;
+
+$button-bg-color: $active-bg-color;
+
+/* -- Couleurs notations --*/
+
+$note-S: #a4ea4a;
+$note-A: #3570c3;
+$note-I: #c34444;
+$note-M: #f6d2ac;
+
+
+$font-path: "../assets/fonts" !default;
+
+$icon-ajouter-tournee: "\e900";
+$icon-alerte: "\e901";
+$icon-comment: "\e902";
+$icon-enlever-tournee: "\e903";
+$icon-loupe2: "\e904";
+$icon-mettre-a-jour: "\e905";
+$icon-ouvrir-notifs: "\e906";
+$icon-ouvrir-notifs-full: "\e907";
+$icon-poubelle: "\e908";
+$icon-print: "\e909";
+$icon-renomer: "\e90a";
+$icon-stylo: "\e90b";
+$icon-synchroniser: "\e90c";
+$icon-visualiser-carte: "\e90d";
+$icon-box: "\e90e";
+$icon-checkbox: "\e90f";
+
+$icon-favoris2: "\e910";
+$icon-favoris-full: "\e911";
+$icon-log-out: "\e92e";
+$icon-en-ligne: "\e933";
+$icon-local: "\e934";
+$icon-check: "\e935";
+
+$icon-infos: "\e912";
+$icon-loupe: "\e913";
+$icon-options: "\e914";
+$icon-roue-crantee: "\e915";
+$icon-favoris3: "\e916";
+$icon-tournees2: "\e917";
+$icon-batiment: "\e918";
+$icon-cle: "\e919";
+$icon-cle-full: "\e91a";
+$icon-oeil: "\e91b";
+$icon-help: "\e91c";
+$icon-nouvelle-tournee-bleu: "\e91d";
+$icon-synchronisation: "\e91e";
+$icon-tournees_sous-header: "\e91f";
+$icon-accueil: "\e920";
+$icon-favoris: "\e921";
+$icon-profil: "\e922";
+$icon-recherche: "\e923";
+$icon-tournees: "\e924";
+$icon-calendar: "\e925";
+$icon-close: "\e926";
+$icon-fleche: "\e927";
+$icon-fleche-full: "\e928";
+$icon-grip: "\e929";
+$icon-cloche: "\e92a";
+$icon-pastille-notifs: "\e92b";
+$icon-carte: "\e92c";
+$icon-liste: "\e92d";
+
+$icon-tertiaire-tournee: "\e92f";
+$icon-social-tournee: "\e930";
+$icon-industriel-tournee: "\e931";
+$icon-gare-tournee: "\e932";
+
+/* -- Notifications -- */
+$growl-info:$note-A;
+$growl-warn:#FFB300;
+$growl-success:$note-S;
+$growl-error:$note-I;
+
+/* -- Fil d'info -- */
+$news-new :#DC3B00;

@@ -1,0 +1,11 @@
+version: '2'
+services:
+    http:
+        environment:
+            - VIRTUAL_HOST=web.cds.sncf-reseau.delivery.trsb.net
+            - LETSENCRYPT_HOST=web.cds.sncf-reseau.delivery.trsb.net
+            - LETSENCRYPT_EMAIL=factory@trsb.net
+networks:
+    default:
+        external:
+            name: delivery_default

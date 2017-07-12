@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-packageName="com.sdavid.ufc.android.scanallergen" android-versionCode="2120" id="com.sdavid.ufc.android.scanallergen" ios-CFBundleIdentifier="com.sdavid.ufc.android.scanallergen" ios-CFBundleVersion="0.1.0" version="0.1.0" xmlns="http://www.w3.org/ns/widgets">
+    <name>Scan Allergen</name>
+    <description>
+    </description>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="android">
+        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+        <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
+        <icon density="hdpi" src="res/android/icons/mipmap-hdpi/icon.png" />
+        <icon density="ldpi" src="res/android/icons/mipmap-ldpi/icon.png" />
+        <icon density="mdpi" src="res/android/icons/mipmap-mdpi/icon.png" />
+        <icon density="xhdpi" src="res/android/icons/mipmap-xhdpi/icon.png" />
+        <icon density="xxhdpi" src="res/android/icons/mipmap-xxhdpi/icon.png" />
+        <icon density="xxxhdpi" src="res/android/icons/mipmap-xxxhdpi/icon.png" />
+        <splash density="port-hdpi" src="res/android/LaunchImages/drawable-land-hdpi/screen.png" />
+        <splash density="port-ldpi" src="res/android/LaunchImages/drawable-land-ldpi/screen.png" />
+        <splash density="port-mdpi" src="res/android/LaunchImages/drawable-land-mdpi/screen.png" />
+        <splash density="port-xhdpi" src="res/android/LaunchImages/drawable-land-xhdpi/screen.png" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <platform name="ios">
+        <preference name="StatusBarOverlaysWebView" value="false" />
+        <preference name="deployment-target" value="9.3" />
+        <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
+        <icon height="114" src="res/ios/icons/icon@2x.png" width="114" />
+        <icon height="48" src="res/ios/icons/icon-24@2x.png" width="48" />
+        <icon height="55" src="res/ios/icons/icon-27.5@2x.png" width="55" />
+        <icon height="58" src="res/ios/icons/icon-29@2x.png" width="58" />
+        <icon height="87" src="res/ios/icons/icon-29@3x.png" width="87" />
+        <icon height="80" src="res/ios/icons/icon-40@2x.png" width="80" />
+        <icon height="80" src="res/ios/icons/icon-40@2x-2.png" width="80" />
+        <icon height="50" src="res/ios/icons/icon-50.png" width="50" />
+        <icon height="100" src="res/ios/icons/icon-50@2x.png" width="100" />
+        <icon height="120" src="res/ios/icons/icon-60@2x.png" width="120" />
+        <icon height="180" src="res/ios/icons/icon-60@3x.png" width="180" />
+        <icon height="72" src="res/ios/icons/icon-72.png" width="72" />
+        <icon height="144" src="res/ios/icons/icon-72@2x.png" width="144" />
+        <icon height="172" src="res/ios/icons/icon-86@2x.png" width="172" />
+        <icon height="196" src="res/ios/icons/icon-98@2x.png" width="196" />
+        <icon height="20" src="res/ios/icons/Icon-App-20x20@1x.png" width="20" />
+        <icon height="40" src="res/ios/icons/Icon-App-20x20@2x.png" width="40" />
+        <icon height="60" src="res/ios/icons/Icon-App-20x20@3x.png" width="60" />
+        <icon height="40" src="res/ios/icons/Icon-App-40x40@1x.png" width="40" />
+        <icon height="120" src="res/ios/icons/Icon-App-40x40@3x.png" width="120" />
+        <icon height="57" src="res/ios/icons/Icon-App-57x57@1x.png" width="57" />
+        <icon height="60" src="res/ios/icons/Icon-App-60x60@1x.png" width="60" />
+        <icon height="120" src="res/ios/icons/Icon-App-60x60@2x.png" width="120" />
+        <icon height="180" src="res/ios/icons/Icon-App-60x60@3x.png" width="180" />
+        <icon height="76" src="res/ios/icons/Icon-App-76x76@1x.png" width="76" />
+        <icon height="152" src="res/ios/icons/Icon-App-76x76@2x.png" width="152" />
+        <icon height="228" src="res/ios/icons/Icon-App-76x76@3x.png" width="228" />
+        <icon height="228" src="res/ios/icons/Icon-App-83.5x83.5@2x.png" width="228" />
+        <icon height="29" src="res/ios/icons/icon-small.png" width="29" />
+        <icon height="29" src="res/ios/icons/icon-small-1.png" width="29" />
+        <icon height="58" src="res/ios/icons/icon-small@2x.png" width="58" />
+        <icon height="58" src="res/ios/icons/icon-small@2x-1.png" width="58" />
+        <icon height="87" src="res/ios/icons/icon-small@3x.png" width="87" />
+        <splash height="960" src="res/ios/LaunchImages/Default@2x~iphone.png" width="640" />
+        <splash height="960" src="res/ios/LaunchImages/Default@2x-iphone.png" width="640" />
+        <splash height="1136" src="res/ios/LaunchImages/Default-568h@2x-iphone.png" width="640" />
+        <splash height="1136" src="res/ios/LaunchImages/Default-568h@2x~iphone.png" width="640" />
+        <splash height="1334" src="res/ios/LaunchImages/Default-667h.png" width="750" />
+        <splash height="2208" src="res/ios/LaunchImages/Default-736h.png" width="1242" />
+        <splash height="1536" src="res/ios/LaunchImages/Default-Landscape@2x~ipad.png" width="2048" />
+        <splash height="1242" src="res/ios/LaunchImages/Default-Landscape-736h.png" width="2208" />
+        <splash height="768" src="res/ios/LaunchImages/Default-Landscape~ipad.png" width="1024" />
+        <splash height="2048" src="res/ios/LaunchImages/Default-Portrait@2x-ipad.png" width="1536" />
+        <splash height="2048" src="res/ios/LaunchImages/Default-Portrait@2x~ipad.png" width="1536" />
+        <splash height="1024" src="res/ios/LaunchImages/Default-Portrait-ipad.png" width="768" />
+        <splash height="1024" src="res/ios/LaunchImages/Default-Portrait~ipad.png" width="768" />
+        <splash height="480" src="res/ios/LaunchImages/Default~iphone.png" width="320" />
+        <preference name="SuppressesLongPressGesture" value="true" />
+    </platform>
+    <preference name="Orientation" value="landscape" />
+    <preference name="BackupWebStorage" value="local" />
+    <preference name="SplashScreenDelay" value="4000" />
+    <preference name="FadeSplashScreenDuration" value="1000" />
+    <preference name="LoadUrlTimeoutValue" value="60000" />
+    <preference name="DisallowOverscroll" value="true" />
+    <plugin name="cordova-plugin-camera" />
+    <plugin name="cordova-plugin-device" />
+    <plugin name="cordova-plugin-file" />
+    <plugin name="cordova-plugin-file-transfer" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.5.0" />
+    <plugin name="cordova-plugin-network-information" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+</widget>

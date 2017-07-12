@@ -1,0 +1,12 @@
+{
+  "name": "ufc-app",
+  "dependencies": {},
+  "globalDependencies": {
+    "cordova": "registry:dt/cordova",
+    "cordova-plugin-network-information": "registry:dt/cordova-plugin-network-information",
+    "core-js": "registry:dt/core-js"
+  },
+  "ambientDependencies": {
+    "underscore": "github:DefinitelyTyped/DefinitelyTyped/underscore/underscore.d.ts"
+  }
+}
